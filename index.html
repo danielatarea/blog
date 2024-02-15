@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Daniela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Riddles (Adivinanzas)</h1>
+    
+    <!-- Pantalla Inicial -->
+    <div id="pantalla-inicial">
+        <p>What are you doing? (¿Qué está haciendo?)</p>
+        <button class="btn" onclick="comenzarJuego()">Play</button>
+    </div>
+
+    <!-- Pantalla juego -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <img src="img/imagen1.jpeg" alt="" id="imgBandera" class="imgBandera">
+        <div class="opciones">
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla final -->
+    <div id="pantalla-final">
+        <h2>CORRECT: <span id="numCorrectas">3</span></h2>
+        <h2>INCORRECT: <span id="numIncorrectas">2</span></h2>
+        <button class="btn" onclick="volverAlInicio()">RETURN</button>
+    </div>
+
+    <footer>Hecho por Daniela</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
